@@ -1,0 +1,21 @@
+body {
+  width: 400px;
+  height: 240px;
+  overflow: hidden auto;
+  perspective: 2px;
+}
+
+.parallax {
+  transform-style: preserve-3d;
+  height: 100%;
+  position: relative;
+}
+
+.parallax ::after{
+  content: " ";
+  display: block;
+  position: absolute;
+  inset: 0;
+  background: url(background.jpg);
+  transform: translate(-1px) scale(200%);
+}
